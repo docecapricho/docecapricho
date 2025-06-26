@@ -49,15 +49,30 @@
     }
     .produtos {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
       margin-top: 30px;
+      padding: 0 20px;
     }
-    .produtos img {
+    .produto {
+      background-color: #ffe6ee;
+      border-radius: 15px;
+      padding: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+    .produto:hover {
+      transform: translateY(-5px);
+    }
+    .produto img {
       width: 100%;
       height: auto;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+    .produto p {
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 1rem;
     }
     footer {
       background: #ffb6c1;
@@ -74,7 +89,7 @@
 </head>
 <body>
   <header>
-    <img src="Logo - Doce Capricho Boneca - sem fundo.png" alt="Logo Doce Capricho">
+    <img src="logo.png" alt="Logo Doce Capricho">
     <h1>Doce Capricho Doceria</h1>
     <p>Bolos que encantam do sabor à apresentação!</p>
   </header>
@@ -87,13 +102,30 @@
   <section>
     <h2>Nossos Produtos</h2>
     <div class="produtos">
-      <img src="20230129_191344.jpg" alt="Bolo com cobertura de castanha e cereja">
-      <img src="20230317_154702.jpg" alt="Bolo caseiro com leite condensado">
-      <img src="20230317_154725.jpg" alt="Bolo com cartaz da loja">
-      <img src="20231207_180544.jpg" alt="Bolo temático de anjinho">
-      <img src="Bolo de Aniversário - Doce Capricho (9).jpg" alt="Bolo de aniversário 65 anos">
-      <img src="Doce - Docinho de Morango (13).jpg" alt="Docinhos rosa de morango">
-      <img src="Docinhos 3.jpg" alt="Brigadeiros tradicionais">
+      <div class="produto">
+        <img src="bolo1.jpg" alt="Bolo com morangos frescos e geleia">
+        <p>Bolo de morango com geleia</p>
+      </div>
+      <div class="produto">
+        <img src="bolo2.jpg" alt="Bolo com girassóis e raspas de chocolate">
+        <p>Bolo decorado com girassóis</p>
+      </div>
+      <div class="produto">
+        <img src="bolo3.jpg" alt="Bolo com brigadeiros e morangos">
+        <p>Bolo belga com brigadeiros</p>
+      </div>
+      <div class="produto">
+        <img src="bolo4.jpg" alt="Bolo de brigadeiro com granulado e morango">
+        <p>Bolo de brigadeiro</p>
+      </div>
+      <div class="produto">
+        <img src="bolo5.jpg" alt="Bolo de casamento com flores cor de rosa">
+        <p>Bolo de casamento</p>
+      </div>
+      <div class="produto">
+        <img src="docinhos.jpg" alt="Brigadeiros tradicionais">
+        <p>Brigadeiros</p>
+      </div>
     </div>
   </section>
 
